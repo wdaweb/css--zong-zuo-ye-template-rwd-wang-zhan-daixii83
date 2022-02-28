@@ -1,0 +1,865 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: auto;
+  margin: 0;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.regular {
+  font-weight: normal;
+}
+
+.container {
+  width:100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background:url("./images/slide-1\(1920x845\).jpg") no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: yellow;
+  transition: 0.3s;
+}
+
+.topbar {
+  width: 80%;
+  height: 20%;
+  color: white;
+  display: flex;
+}
+
+.contact {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 50px 100px 50px 0;
+  font-size: 15px;
+}
+.contact span {
+  margin-bottom: 5px;
+}
+
+.logo img {
+  display: flex;
+  width: 157px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.icon {
+
+}
+
+.icon:hover {
+
+}
+
+.menu {
+  width: 80%;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(220, 220, 220);
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.menu span {
+  color: white;
+  padding: 2rem;
+  font-weight: bolder;
+  font-size: 13px;
+}
+
+.carousel {
+
+}
+
+#prev {
+  width: 70px;
+  height: 61.2px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: rgba(255, 255, 255, 0.22);
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bolder;
+  text-decoration: underline;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+#next {
+  width: 70px;
+  height: 61.2px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background: rgba(255, 255, 255, 0.22);
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bolder;
+  text-decoration: underline;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+#shopnow {
+  width: 193px;
+  height: 70px;
+  border-radius: 5px;
+  background: #fff773;
+  border: none;
+  color: black;
+  font-weight: bolder;
+  box-shadow: 2px 3px 10px 0 rgb(0 0 0 / 17%);
+}
+
+
+
+.introduction {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./images/bg-pattern-1.jpg);
+  padding: 5rem;
+}
+
+.leftIntro {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+}
+
+.Organic,
+.GoodForHealth {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Organic,
+.NoAdditives {
+  margin-bottom: 50px;
+}
+
+.GoodForHealth,
+.ALotOfEnergy {
+  margin-top: 50px;
+}
+
+.introTextLeft {
+  width: 65%;
+  text-align: end;
+  margin-right: 10px;
+}
+
+.introTextLeft a {
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+}
+.introTextLeft a:hover {
+  color: #76aa6f;
+}
+
+.introTextLeft p {
+  color: #777777;
+  font-size: 1rem;
+}
+
+.introIcon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #76aa6f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introIcon svg {
+  width: 50px;
+  height: 53px;
+}
+
+.introIcon svg g {
+  fill: white;
+}
+
+.NoAdditives,
+.ALotOfEnergy {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.rightIntro {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.introTextRight {
+width: 65%;
+text-align: start;
+margin-left: 10px;
+}
+
+.introTextRight a {
+font-size: 24px;
+color: black;
+text-decoration: none;
+}
+.introTextRight a:hover {
+color: #76aa6f;
+}
+
+.introTextRight p {
+color: #777777;
+font-size: 1rem;
+}
+
+.SMOOTH {
+  width: 399px;
+  height: 407px;
+
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 5rem auto;
+}
+
+.productTitle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 35px;
+}
+
+.flavor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18%;
+  height: 30%;
+  background: #f5f5f5;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#info,
+#addtocart {
+  display: none;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 2rem;
+}
+
+.item h5 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.item a {
+  text-decoration: none;
+  color: black;
+}
+
+.item a:hover {
+  color: #76aa6f;
+}
+
+.item p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: #76aa6f;
+}
+
+.offPrice {
+  display: flex;
+}
+
+#originalPrice {
+  color: rgba(21, 21, 21, 0.5);
+  text-decoration: line-through;
+}
+
+.achievement {
+  background: url(./images/parallax-2.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ACHV {
+  width: 20%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.ACHV::before {
+  content: "";
+  border: 1px solid white;
+  position: absolute;
+  width: 30px;
+}
+
+.ACHV h1 {
+  font-size: 55px;
+}
+
+.ACHV h5 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.whyorganic {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainblock {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.miniCOU {
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.COUBlock {
+  background: url(./images/bg-pattern-1.jpg);
+  width: 75%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.COUBlock h4 {
+  font-size: 24px;
+}
+
+.COUBlock a {
+  text-decoration: none;
+  color: black;
+}
+
+.COUBlock a:hover {
+  color: #76aa6f;
+}
+
+.COUImg {
+  background: url(./images/product-big-1-470x324.png) no-repeat center/cover;
+  width: 470px;
+  height: 324px;
+}
+
+.offPrice {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+.listHeader {
+  display: flex;
+  width: 100%;
+}
+
+.listHeader h2 {
+  font-size: 55px;
+}
+
+.listBtn {
+  width: 42px;
+  height: 42px;
+  border: 1px solid none;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 0 rgb(1 3 4 / 19%);
+  margin-right: 1.5rem;
+}
+
+.card1 {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.listItem {
+  font-size: 18px;
+}
+
+.subBlock {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 7rem;
+}
+
+.FREESHIPPING,
+.CUSTOMERCARE,
+.HEALTHYENERGETIC {
+  width: 23%;
+  height: 20vh;
+  border: 1px solid rgba(119, 119, 119, 0.3);
+  margin: 0 1.5rem;
+  padding-left: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.subIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.subText h5 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.subText h5:hover {
+  color: #76aa6f;
+}
+
+.subText p {
+  margin: 0;
+  color: #777777;
+}
+
+.whatpeoplesay {
+  width: 100%;
+  height: 40vw;
+  background: url(./images/bg-pattern-1.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatpeoplesay h2 {
+  display: flex;
+  width: 100%;
+  font-size: 55px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.C-COS {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.COSitem {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.COSitem p {
+  width: 50%;
+  font-size: 18px;
+  line-height: 2;
+  color: #777777;
+  margin-bottom: 2rem;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+
+.client p {
+  margin-top: 5px;
+  color: #76aa6f;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.photo img {
+  border-radius: 50%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 45px;
+}
+
+.ourgallery {
+  box-sizing: content-box;
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.leftBlock {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.LTBlock {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  margin: 2rem;
+}
+
+.innerLL {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.LT {
+  width: 100%;
+  height: 50%;
+}
+
+.LB {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+.innerLR {
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.LBBlock {
+  display: flex;
+  width: 100%;
+  height: 30%;
+}
+
+.rightBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 1rem;
+}
+
+.RTBlock {
+  display: flex;
+  width: 100%;
+  height: 30%;
+}
+
+.innerRL {
+  width: 50%;
+  height: 100%;
+}
+
+.innerRR {
+  width: 50%;
+  height: 100%;
+}
+
+.RBBlock {
+  display: flex;
+  width: 100%;
+  height: 60%;
+}
+
+.subscribe {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  background: url(./images/parallax-4.jpg) no-repeat center;
+  justify-content: center;
+  align-items: center;
+}
+
+.stayconn {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  left: 15%;
+}
+
+.stayconn h3 {
+  font-size: 36px;
+  color: white;
+  margin-top: 0;
+}
+
+.stayconn p {
+  font-size: 15px;
+  color: white;
+  margin: 0;
+}
+
+.email {
+  width: 40%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.email input{
+  width: 100%;
+  outline-style: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+}
+
+.sub {
+  width: 30%;
+  position: relative;
+  right: 0;
+}
+
+.subBTN {
+  width: 193px;
+  height: 70px;
+  border-radius: 5px;
+  border: none;
+  background: #76aa6f;
+  color: white;
+  font-weight: bolder;
+}
+
+.ourteam {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.ourteam h2 {
+  font-size: 55px;
+}
+
+.membergroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.picture {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  padding: 1rem;
+}
+
+.profile a {
+  color: #151515;
+  text-decoration: none;
+}
+
+.profile a:hover {
+  color: #76aa6f;
+  transition: 0.3s;
+}
+
+.profile p {
+  color: #777777;
+}
+
+.blogpost {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(./images/bg-pattern-1.jpg);
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.blogpost h2 {
+  font-size: 55px;
+}
+
+.cardgroup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+    margin: 1rem;
+}
+
+.content {
+  width: 100%;
+  background: white;
+  padding: 2rem 3rem;
+  color: #777777;
+}
+
+.content a{
+  color: #151515;
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: #76aa6f;
+}
+
+.logo {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+}
+
+.stamp {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stamp img {
+  margin: 0;
+}
+
+.footer {
+  width: 100%;
+  background: #383d3f;
+  height: 50vh;
+  display: flex;
+}
+
+.gallery {
+  width: 25%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.smgallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic {
+  width: 30%;
+}
+
+
+
+
+
+
+
